@@ -62,9 +62,26 @@ void test1()
 	}
 }
 
+void test2()
+{
+	char *alpha = "asjkdfghksafasfuyagnsuyef";
+	char *alphacap = "FJKHGKSFASFfghakshfAGSFH";
+	char *nonalpha = "1243134_+_+_234";
+	char *mixed = "adjlsfh234ahSAJDH34";
+	char *last_non = "adsfgnadjksgn0";
+	char *empty = "";
+	assert(ft_str_is_alpha(alpha));
+	assert(ft_str_is_alpha(alphacap));
+	assert(!ft_str_is_alpha(nonalpha));
+	assert(!ft_str_is_alpha(mixed));
+	assert(!ft_str_is_alpha(last_non));
+	assert(ft_str_is_alpha(empty));
+}
+
 int main()
 {
 	test0();
 	test1();
-	return 0;
+	test2();
+	return (0);
 }
