@@ -5,3 +5,5 @@
 #include "../../ex04/ft_str_is_lowercase.c"
 #include "../../ex05/ft_str_is_uppercase.c"
 #include "../../ex06/ft_str_is_printable.c"
+#include "../../ex07/ft_strupcase.c"
+#include "../../ex08/ft_strlowcase.c"

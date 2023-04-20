@@ -6,12 +6,12 @@ void assert_string_eq(const char *first, const char *second)
 {
 	while (1)
 	{
-		assert(*first == *second);
-		first++;
-		second++;
 		if (*first == '\0' && *second == '\0') {
 			break;
 		}
+		assert(*first == *second);
+		first++;
+		second++;
 		if (*first == '\0' ^ *second == '\0') {
 			assert(0);
 		}
@@ -128,14 +128,57 @@ void test6()
 	assert(ft_str_is_printable(empty));
 }
 
+void test7()
+{
+	char lower[] = "abc";
+	char upper[] = "ABC";
+	char others[] = "aGj24!!";
+	char empty[] = "";
+	assert_string_eq(ft_strupcase(lower), "ABC");
+	assert_string_eq(ft_strupcase(upper), "ABC");
+	assert_string_eq(ft_strupcase(others), "AGJ24!!");
+	assert_string_eq(ft_strupcase(empty), "");
+	assert_string_eq(lower, "ABC");
+	assert_string_eq(upper, "ABC");
+	assert_string_eq(others, "AGJ24!!");
+	assert_string_eq(empty, "");
+}
+
+void test8()
+{
+	char lower[] = "abc";
+	char upper[] = "ABC";
+	char others[] = "aGj24!!";
+	char empty[] = "";
+	assert_string_eq(ft_strlowcase(lower), "abc");
+	assert_string_eq(ft_strlowcase(upper), "abc");
+	assert_string_eq(ft_strlowcase(others), "agj24!!");
+	assert_string_eq(ft_strlowcase(empty), "");
+	assert_string_eq(lower, "abc");
+	assert_string_eq(upper, "abc");
+	assert_string_eq(others, "agj24!!");
+	assert_string_eq(empty, "");
+}
+
 int main()
 {
 	test0();
+	printf("0 is ok\n");
 	test1();
+	printf("1 is ok\n");
 	test2();
+	printf("2 is ok\n");
 	test3();
+	printf("3 is ok\n");
 	test4();
+	printf("4 is ok\n");
 	test5();
+	printf("5 is ok\n");
 	test6();
+	printf("6 is ok\n");
+	test7();
+	printf("7 is ok\n");
+	test8();
+	printf("8 is ok\n");
 	return (0);
 }
