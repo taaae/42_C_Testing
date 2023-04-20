@@ -1,0 +1,1 @@
+#include "../../ex00/ft_strcpy.c"
