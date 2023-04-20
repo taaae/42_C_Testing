@@ -118,6 +118,16 @@ void test5()
 	assert(ft_str_is_uppercase(empty));
 }
 
+void test6()
+{
+	char *normal = "iquhriu  kjasdhfklj fj";
+	char weird[] = "wf\n";
+	char *empty = "";
+	assert(ft_str_is_printable(normal));
+	assert(!ft_str_is_printable(weird));
+	assert(ft_str_is_printable(empty));
+}
+
 int main()
 {
 	test0();
@@ -126,5 +136,6 @@ int main()
 	test3();
 	test4();
 	test5();
+	test6();
 	return (0);
 }
