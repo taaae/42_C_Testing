@@ -104,6 +104,20 @@ void test4()
 	assert(ft_str_is_lowercase(empty));
 }
 
+void test5()
+{
+	char *lower = "loewr";
+	char *caps = "CAPS";
+	char *mixed = "adlsjfhKLDJSFH";
+	char *weird = ")*(#&*()098357085)";
+	char *empty = "";
+	assert(!ft_str_is_uppercase(lower));
+	assert(ft_str_is_uppercase(caps));
+	assert(!ft_str_is_uppercase(mixed));
+	assert(!ft_str_is_uppercase(weird));
+	assert(ft_str_is_uppercase(empty));
+}
+
 int main()
 {
 	test0();
@@ -111,5 +125,6 @@ int main()
 	test2();
 	test3();
 	test4();
+	test5();
 	return (0);
 }
