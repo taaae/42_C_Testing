@@ -90,11 +90,26 @@ void test3()
 	assert(ft_str_is_numeric(empty));
 }
 
+void test4()
+{
+	char *lower = "loewr";
+	char *caps = "CAPS";
+	char *mixed = "adlsjfhKLDJSFH";
+	char *weird = ")*(#&*()098357085)";
+	char *empty = "";
+	assert(ft_str_is_lowercase(lower));
+	assert(!ft_str_is_lowercase(caps));
+	assert(!ft_str_is_lowercase(mixed));
+	assert(!ft_str_is_lowercase(weird));
+	assert(ft_str_is_lowercase(empty));
+}
+
 int main()
 {
 	test0();
 	test1();
 	test2();
 	test3();
+	test4();
 	return (0);
 }
