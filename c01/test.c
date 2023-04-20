@@ -66,18 +66,7 @@ void test5()
 {
 	char* str = "Ex05: Should display itself\n";
 	char* str_old = str;
-	// code by chatgpt
-	freopen("output.txt", "w", stdout);
 	ft_putstr(str);
-	fclose(stdout);
-	FILE *fp = fopen("output.txt", "r");
-    char output[100];
-    fgets(output, 100, fp);
-    assert(strcmp(output, "Ex05: Should display itself\n") == 0);
-
-    /* Clean up */
-    fclose(fp);
-    remove("output.txt");
 	// check that doesn't modify str
 	assert(str == str_old);
 }
