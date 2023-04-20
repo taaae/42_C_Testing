@@ -5,7 +5,7 @@ Usage guide:
 cd into the repo with C project and run this commands:
 ```
 git clone git@github.com:taaae/42_C_Testing.git
-cd 42_C_Testing/c0**X**
+cd 42_C_Testing/c0X
 ./test.sh
 ```
 X stands for the project number
