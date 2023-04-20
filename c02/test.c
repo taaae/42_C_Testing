@@ -78,10 +78,23 @@ void test2()
 	assert(ft_str_is_alpha(empty));
 }
 
+void test3()
+{
+	char *numeric = "1234567890";
+	char *not_numeric = "-afds+xd";
+	char *mixed = "m1x3d";
+	char *empty = "";
+	assert(ft_str_is_numeric(numeric));
+	assert(!ft_str_is_numeric(not_numeric));
+	assert(!ft_str_is_numeric(mixed));
+	assert(ft_str_is_numeric(empty));
+}
+
 int main()
 {
 	test0();
 	test1();
 	test2();
+	test3();
 	return (0);
 }
