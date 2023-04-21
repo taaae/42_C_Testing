@@ -1,4 +1,5 @@
 #include <assert.h>
+#incldue <stdio.h>
 #include "../../ex00/ft_ft.c"
 #include "../../ex01/ft_ultimate_ft.c"
 #include "../../ex02/ft_swap.c"
@@ -64,9 +65,11 @@ void test4()
 
 void test5()
 {
-	char* str = "Ex05: Should display itself\n";
+	char* str = "Hello";
 	char* str_old = str;
+	printf("Should display \"Hello\": ");
 	ft_putstr(str);
+	printf("\n");
 	// check that doesn't modify str
 	assert(str == str_old);
 }
