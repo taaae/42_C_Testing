@@ -220,6 +220,23 @@ void test10()
 	}
 }
 
+void test11()
+{
+	printf("Testing 11\n");
+	printf("Should be \"abc\":\n");
+	ft_putstr_non_printable("abc");
+	printf("\n");
+	printf("Should be empty: \n");
+	ft_putstr_non_printable("");
+	printf("\n");
+	printf("Should be \"Coucou\\0atu vas bien ?\":\n");
+	ft_putstr_non_printable("Coucou\ntu vas bien ?");
+	printf("\n");
+	printf("Should be \"\\09\\1b\":\n");
+	ft_putstr_non_printable("\t\x1B");
+	printf("\n");
+}
+
 int main()
 {
 	test0();
@@ -244,5 +261,6 @@ int main()
 	printf("9 is ok\n");
 	test10();
 	printf("10 is ok\n");
+	test11();
 	return (0);
 }

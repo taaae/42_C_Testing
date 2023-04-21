@@ -9,3 +9,4 @@
 #include "../../ex08/ft_strlowcase.c"
 #include "../../ex09/ft_strcapitalize.c"
 #include "../../ex10/ft_strlcpy.c"
+#include "../../ex11/ft_putstr_non_printable.c"
