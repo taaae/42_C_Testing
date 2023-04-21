@@ -8,3 +8,4 @@
 #include "../../ex07/ft_strupcase.c"
 #include "../../ex08/ft_strlowcase.c"
 #include "../../ex09/ft_strcapitalize.c"
+#include "../../ex10/ft_strlcpy.c"
