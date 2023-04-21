@@ -7,3 +7,4 @@
 #include "../../ex06/ft_str_is_printable.c"
 #include "../../ex07/ft_strupcase.c"
 #include "../../ex08/ft_strlowcase.c"
+#include "../../ex09/ft_strcapitalize.c"

@@ -160,6 +160,20 @@ void test8()
 	assert_string_eq(empty, "");
 }
 
+void test9()
+{
+	char example[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+	char expected[] = "Salut, Comment Tu Vas ? 42mots Quarante-Deux; Cinquante+Et+Un";
+	assert_string_eq(ft_strcapitalize(example), example);
+	assert_string_eq(example, expected);
+	assert_string_eq(ft_strcapitalize(example), expected);
+
+	char another[] = "a b c d 1d !g	t";
+	char *expected2 = "A B C D 1d !G	T";
+	assert_string_eq(ft_strcapitalize(another), expected2);
+	assert_string_eq(another, expected2);
+}
+
 int main()
 {
 	test0();
@@ -180,5 +194,7 @@ int main()
 	printf("7 is ok\n");
 	test8();
 	printf("8 is ok\n");
+	test9();
+	printf("9 is ok\n");
 	return (0);
 }
