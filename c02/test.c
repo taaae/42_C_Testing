@@ -237,6 +237,18 @@ void test11()
 	printf("\n");
 }
 
+void test12()
+{
+	write(1, "\n", 1);
+	char str[] = "Bonjour les aminches...c. est fou.tout.ce qu on peut faire avec...print_memory....lol.lol. ";
+	ft_print_memory(str, 92);
+	write(1, "\n", 1);
+	write(1, "\n", 1);
+	printf("should display nothing:\n");
+	ft_print_memory(str, 0);
+	write(1, "\n", 1);
+}
+
 int main()
 {
 	test0();
@@ -262,5 +274,6 @@ int main()
 	test10();
 	printf("10 is ok\n");
 	test11();
+	test12();
 	return (0);
 }

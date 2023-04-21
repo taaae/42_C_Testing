@@ -10,3 +10,4 @@
 #include "../../ex09/ft_strcapitalize.c"
 #include "../../ex10/ft_strlcpy.c"
 #include "../../ex11/ft_putstr_non_printable.c"
+#include "../../ex12/ft_print_memory.c"
