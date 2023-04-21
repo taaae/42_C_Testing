@@ -64,8 +64,8 @@ void test1()
 
 void test2()
 {
-	char *alpha = "asjkdfghksafasfuyagnsuyef";
-	char *alphacap = "FJKHGKSFASFfghakshfAGSFH";
+	char *alpha = "asjkdfghksafasfuyzagnsuyef";
+	char *alphacap = "FJKHAGKSFASFAGSFHZ";
 	char *nonalpha = "1243134_+_+_234";
 	char *mixed = "adjlsfh234ahSAJDH34";
 	char *last_non = "adsfgnadjksgn0";
@@ -92,8 +92,8 @@ void test3()
 
 void test4()
 {
-	char *lower = "loewr";
-	char *caps = "CAPS";
+	char *lower = "lowerza";
+	char *caps = "CAPSZ";
 	char *mixed = "adlsjfhKLDJSFH";
 	char *weird = ")*(#&*()098357085)";
 	char *empty = "";
