@@ -247,6 +247,10 @@ void test12()
 	printf("should display nothing:\n");
 	ft_print_memory(str, 0);
 	write(1, "\n", 1);
+	printf("should display \"ffffffffffffffff\" at the start and seg fault at the end:\n");
+	char *ptr = (char *)0xFFFFFFFFFFFFFFFF;
+	ft_print_memory(ptr, 1);
+	write(1, "\n", 1);
 }
 
 int main()
