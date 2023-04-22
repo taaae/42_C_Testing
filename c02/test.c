@@ -172,6 +172,11 @@ void test9()
 	char *expected2 = "A B C D 1d !G	T";
 	assert_string_eq(ft_strcapitalize(another), expected2);
 	assert_string_eq(another, expected2);
+
+	char another2[] = "AbCd 2AB 3abc dEFGd 23c C c-C-c2Av";
+	char *expected3 = "Abcd 2ab 3abc Defgd 23c C C-C-C2av";
+	assert_string_eq(ft_strcapitalize(another2), expected3);
+	assert_string_eq(another2, expected3);
 }
 
 void test10()
