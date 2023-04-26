@@ -1,6 +1,13 @@
 #!/bin/bash
 
-norminette -R CheckForbiddenSourceHeader ../../ex00 ../../ex01 ../../ex02 ../../ex03 ../../ex04 ../../ex05 ../../ex06 ../../ex07 ../../ex08 ../../ex09 ../../ex10 ../../ex11 ../../ex12
-cc -Wall -Wextra -Werror test.c
+if [ $1 -gt 9 ]
+then
+	norminette -R CheckForbiddenSourceHeader ../../ex$1
+fi
+if [ 10 -gt $1 ]
+then
+	norminette -R CheckForbiddenSourceHeader ../../ex0$1
+fi
+cc -Wall -Wextra -Werror test$1.c
 ./a.out
 rm a.out
