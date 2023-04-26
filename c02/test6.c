@@ -24,7 +24,7 @@ void test6()
 		is_ok = 0;
 	}
 	if (is_ok)
-		printf("ex06 is OK!");
+		printf("ex06 is OK!\n");
 }
 
 int main()
