@@ -42,7 +42,7 @@ void test10()
 	{
 		char *src = "abc";
 		char dest[10];
-		dest[0] = 'a';
+		dest[0] = 'f';
 		assert(ft_strlcpy(dest, src, 0) == 3);
 		assert(dest[0] == 'a');
 	}
